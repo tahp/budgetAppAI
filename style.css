@@ -1,0 +1,69 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+input, button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* Ensures padding doesn't overflow */
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.hidden {
+    display: none;
+}
+
+canvas {
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin: 20px auto;
+    /* Ensure the canvas is visible */
+    border: 1px solid black; /* Add a border to see if the canvas is there */
+    background-color: white; /* Ensure the canvas background is visible */
+}
+
+
+h1, h2 {
+    text-align: center;
+}
+
+#summary p {
+    margin: 5px 0;
+}
+
+/* Responsive fix for iPhone inputs */
+input {
+    -webkit-appearance: yes;
+    -webkit-border-radius: 0;
+}
+
+.container {
+    max-width: 400px;    /* Adjust to fit content nicely */
+    margin: 0 auto;
+    padding: 20px;
+}
