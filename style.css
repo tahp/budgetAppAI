@@ -1,69 +1,68 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
 
 .container {
-    max-width: 400px;
-    margin: 0 auto;
-    padding: 20px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 320px; /* Increased width slightly for better input alignment */
+  text-align: center;
 }
 
-input, button {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-sizing: border-box; /* Ensures padding doesn't overflow */
+h1 {
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px; /* Ensure visible spacing between inputs */
+  margin-bottom: 20px;
+}
+
+input[type="text"], input[type="number"] {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: calc(100% - 20px);
 }
 
 button {
-    background-color: #007BFF;
-    color: white;
-    border: none;
-    cursor: pointer;
+  padding: 10px;
+  font-size: 16px;
+  margin: 5px 0;
+  width: 100%;
+}
+#add-income {
+  background-color: #4caf50;
+  color: white;
 }
 
-button:hover {
-    background-color: #0056b3;
+#add-expense {
+  background-color: #f44336;
+  color: white;
 }
 
-.hidden {
-    display: none;
+#transactions-list {
+  margin-top: 20px;
+  text-align: left;
+}
+
+#chart-container {
+  margin-top: 20px;
 }
 
 canvas {
-    display: block;
-    width: 100%;
-    max-width: 300px;
-    height: auto;
-    margin: 20px auto;
-    /* Ensure the canvas is visible */
-    border: 1px solid black; /* Add a border to see if the canvas is there */
-    background-color: white; /* Ensure the canvas background is visible */
-}
-
-
-h1, h2 {
-    text-align: center;
-}
-
-#summary p {
-    margin: 5px 0;
-}
-
-/* Responsive fix for iPhone inputs */
-input {
-    -webkit-appearance: yes;
-    -webkit-border-radius: 0;
-}
-
-.container {
-    max-width: 400px;    /* Adjust to fit content nicely */
-    margin: 0 auto;
-    padding: 20px;
+  width: 100%;
+  height: auto; /* Ensure canvas scales properly */
 }
