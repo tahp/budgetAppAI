@@ -1,68 +1,41 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
   margin: 0;
   padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
+  background-color: #121212;
+  color: #ffffff;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 .container {
-  background-color: white;
+  max-width: 800px;
+  margin: 0 auto;
   padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  width: 320px; /* Increased width slightly for better input alignment */
-  text-align: center;
-}
-
-h1 {
-  margin-bottom: 20px;
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-  gap: 12px; /* Ensure visible spacing between inputs */
-  margin-bottom: 20px;
-}
-
-input[type="text"], input[type="number"] {
-  padding: 10px;
-  font-size: 16px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  width: calc(100% - 20px);
 }
 
 button {
-  padding: 10px;
-  font-size: 16px;
-  margin: 5px 0;
-  width: 100%;
-}
-#add-income {
-  background-color: #4caf50;
-  color: white;
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
 }
 
-#add-expense {
-  background-color: #f44336;
-  color: white;
+.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
 }
 
-#transactions-list {
-  margin-top: 20px;
-  text-align: left;
+.light-mode {
+  background-color: #ffffff;
+  color: #000000;
 }
 
-#chart-container {
-  margin-top: 20px;
+button#theme-toggle {
+  background-color: #4bc0c0;
+  color: #000;
+  border: none;
+  border-radius: 5px;
 }
 
-canvas {
-  width: 100%;
-  height: auto; /* Ensure canvas scales properly */
+button#theme-toggle:hover {
+  background-color: #36a2eb;
 }
