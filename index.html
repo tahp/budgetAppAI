@@ -6,32 +6,22 @@
   <title>Budget Tracker</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="dark-mode">
   <div class="container">
     <h1>Budget Tracker</h1>
-
-    <div id="account-section">
-      <label for="account-select">Select Account:</label>
-      <select id="account-select"></select>
-      <button id="create-account">New Account</button>
-      <button id="edit-account">Edit Account</button>
-    </div>
-
+    <button id="theme-toggle">Toggle Light/Dark Mode</button>
     <form id="transaction-form">
       <input type="number" id="amount" placeholder="$ amount - example: 50" required />
-      <input type="text" id="category" placeholder="Income from or expense for?" required />
+      <input type="text" id="category" placeholder="Income from or Expense for?" required />
       <button type="button" id="add-income">Add Income</button>
       <button type="button" id="add-expense">Add Expense</button>
     </form>
-
     <div id="transactions-list"></div>
     <div id="chart-container">
       <canvas id="expenseChart"></canvas>
       <canvas id="incomeChart"></canvas>
     </div>
   </div>
-  
-  <!-- Include Chart.js -->
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script src="script.js"></script>
 </body>
